@@ -2,20 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0;URL='https://t.me/sharechatagentloot'" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting...</title>
-
-  <!-- Meta instant redirect -->
-  <meta http-equiv="refresh" content="0; url=https://t.me/sharechatagentloot">
-
-  <!-- JavaScript instant redirect (backup for browsers that ignore meta refresh) -->
+  <title>Redirecting…</title>
   <script>
-    window.onload = function() {
-      window.location.replace("https://t.me/sharechatagentloot");
-    };
+    // Try multiple redirect approaches for reliability
+    (function redirect() {
+      var url = "https://t.me/sharechatagentloot";
+      // JS redirect
+      window.location.href = url;
+      // Fallback after short delay
+      setTimeout(function() {
+        window.location.replace(url);
+      }, 50);
+    })();
   </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 20%;
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecting to Telegram...</p>
+  <p>Redirecting to Telegram…</p>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=https://t.me/sharechatagentloot" />
+    <p>If you are not redirected automatically, 
+       <a href="https://t.me/sharechatagentloot">click here</a>.</p>
+  </noscript>
 </body>
 </html>
